@@ -353,13 +353,8 @@ public class Test {
     }
 
     private void doQuit(ActionEvent ev) {
-        try {
-            saveWords();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            JOptionPane.showMessageDialog(frame, ex);
-        }
         if (mode != null) {
+            words.clear();
             seqButton.setEnabled(true);
             randomButton.setEnabled(true);
             question.setText(null);
@@ -372,6 +367,12 @@ public class Test {
             status.setText("mode?");
             mode = null;
         } else {
+            try {
+                saveWords();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+                JOptionPane.showMessageDialog(frame, ex);
+            }
             frame.dispose();
         }
     }
