@@ -84,6 +84,8 @@ public class Test {
     
     private int countCorrect = 0;
     private int countWrong = 0;
+    private int totalCorrect = 0;
+    private int totalWrong = 0;
     
     
     private Test(String filename) throws IOException {
@@ -114,6 +116,9 @@ public class Test {
         }
         if (dictionary.size() == 0)
             throw new IOException("no words read");
+        
+        totalCorrect = dictionary.stream().mapToInt(Word::getCorrect).sum();
+        totalWrong = dictionary.stream().mapToInt(Word::getWrong).sum();
     }
     
     private void saveWords() throws IOException {
@@ -331,17 +336,19 @@ public class Test {
     private void correct() {
         words.peek().correct();
         countCorrect += 1;
+        totalCorrect += 1;
         updateStatus();
     }
     
     private void wrong() {
         words.peek().wrong();
         countWrong += 1;
+        totalWrong += 1;
         updateStatus();
     }
     
     private void updateStatus() {
-        status.setText(String.format("Correct: %d, Wrong: %d, Open: %s", countCorrect, countWrong, words.size()));
+        status.setText(String.format("Session: +%d -%d, Total: +%d -%d, Open: %s", countCorrect, countWrong, totalCorrect, totalWrong, words.size()));
     }
 
     private void doQuit(ActionEvent ev) {

@@ -1,89 +1,89 @@
 1;abeam;querab;1;0
 2;accept;annehmen;1;0
 3;according;entsprechend;1;0
-4;accredited;verantwortlich;1;1
+4;accredited;verantwortlich;1;0
 5;accumulate;ackumulieren;1;0
 6;activate;aktivieren, in Betrieb setzen;1;0
-7;actual;wirklich;0;2
+7;actual;wirklich;1;1
 8;acrobatics;Kunstflug;1;0
-9;add;hinzufügen;1;0
+9;add;hinzufügen;0;1
 10;In addition, additional;zusätzlich;1;0
-11;adhere;einhalten;0;1
-12;adherence;Einhaltung;0;1
-13;ADIZ - Air Defence Identification Zone;Flugüberwachungszone;0;0
-14;ADIZ boundary;Grenze ";0;0
-15;adjacent;anliegend, benachbart;0;1
-16;adjoining;angrenzend;0;0
-17;advance;Fortschritt;0;0
-18;in advance;im voraus;0;0
-19;admit;zulassen;0;0
-20;admissible;zulässig;0;0
-21;aerial photography;Luftbildaufnahmen;0;0
-22;aerodrome reference point - ARP;Flugplatzbezugspunkt;0;0
-23;aerodrome of departure;Startflugplatz, Abflugplatz;0;0
-24;aeronautical chart;Luftfahrtkarte;0;0
-25;aeronautical station;Flugfunkstelle;0;0
-26;aeronautical weather report;Flugwettermeldung;0;0
-27;aeroplane;Flugzeug;0;0
-28;aeroplane towing;Flugzeugschlepp;0;0
-29;Aero-tow operations;Flugzeugschleppbetrieb;0;0
-30;Aero-tow start;Flugzeugschleppstart;0;0
-31;aggregates of persons;Menschenansammlung;0;0
-32;affected;betroffen;0;0
-33;alter;ändern;0;0
+11;adhere;einhalten;1;0
+12;adherence;Einhaltung;1;1
+13;ADIZ - Air Defence Identification Zone;Flugüberwachungszone;1;0
+14;ADIZ boundary;Grenze Flugüberwachungszone;1;0
+15;adjacent;anliegend, benachbart;1;1
+16;adjoining;angrenzend;1;2
+17;advance;Fortschritt;0;1
+18;in advance;im voraus;0;1
+19;admit;zulassen;1;0
+20;admissible;zulässig;1;0
+21;aerial photography;Luftbildaufnahmen;0;1
+22;aerodrome reference point - ARP;Flugplatzbezugspunkt;1;0
+23;aerodrome of departure;Startflugplatz, Abflugplatz;0;1
+24;aeronautical chart;Luftfahrtkarte;1;1
+25;aeronautical station;Flugfunkstelle;1;1
+26;aeronautical weather report;Flugwettermeldung;0;3
+27;aeroplane;Flugzeug;1;0
+28;aeroplane towing;Flugzeugschlepp;1;0
+29;Aero-tow operations;Flugzeugschleppbetrieb;1;0
+30;Aero-tow start;Flugzeugschleppstart;1;0
+31;aggregates of persons;Menschenansammlung;1;1
+32;affected;betroffen;1;1
+33;alter;ändern;1;0
 34;aid;Hilfe;1;0
-35;airfield;Landeplatz;0;0
+35;airfield;Landeplatz;1;0
 36;airfield operator;Landeplatzhalter;0;1
-37;airborne;gestartet;0;0
-38;airmiss;Fastzusammenstoß;0;0
-39;airmiss report;Meldung über ";0;0
-40;aircraft;Luftfahrzeug;0;0
-41;aircraft type;Luftfahrzeugmuster;0;0
-42;aircraft type designator;Luftfahrzeug-Musterkennzeichnung;0;0
+37;airborne;gestartet;1;0
+38;airmiss;Fastzusammenstoß;1;0
+39;airmiss report;Meldung über Fastzusammenstoß;1;0
+40;aircraft;Luftfahrzeug;1;0
+41;aircraft type;Luftfahrzeugmuster;1;2
+42;aircraft type designator;Luftfahrzeug-Musterkennzeichnung;1;0
 43;air show;Luftfahrtschau;1;0
-44;airspace;Luftraum;0;0
-45;air traffic;Luftverkehr;0;0
-46;air traffic service;Luftverkehrsdienste;0;0
-47;air traffic control service - ATC;Luftverkehrskontrolldienst;0;0
-48;all day;ganztägig;0;0
-49;All-up weight;Gesamtgewicht;0;0
-50;allow;erlauben;0;0
-51;alternate aerodrome;Ausweichflugplatz;0;0
-52;altitude;Flughöhe;0;0
-53;amend;ändern;0;0
-54;amendment;Änderung;0;0
-55;ammunition depot;Munitionslager;0;0
-56;announce;bekanntmachen;0;0
-57;anticipate;vorwegnehmen;0;0
-58;applicable;anwendbar;0;0
-59;application;Anwendung, Antrag;0;0
-60;apply;anwenden;0;0
-61;apply for;beantragen;0;0
-62;approach;Anflug;0;0
-63;approach aids;Anflughilfen;0;0
-64;approach centre line;Anfluggrundlinie;0;0
-65;approach to land;Landeanflug;0;0
-66;appropriate;angemessen, zutreffend;0;0
-67;approval;Genehmigung;0;0
-68;appron;Vorfeld;0;0
-69;approximately;annähernd, ungefähr;0;0
-70;armed forces;Streitkräfte;0;0
-71;arrange;einrichten;0;0
-72;arrival route;Anflugstrecke;0;0
-73;as far as;soweit;0;0
-74;as soon as;sobald;0;0
-75;as well as;sowie;0;0
-76;assign;zuweisen;0;0
-77;assignment;Zuweisung;0;0
-78;associated with;in Verbindung mit;0;1
-79;ATC clearance;ATC-Freigabe;0;0
-80;ATC unit;ATC-Stelle;0;0
-81;attached rope;anhängendes Seil;0;0
-82;attention shall be paid to;es ist zu achten auf;0;0
-83;authority;Behörde;0;0
+44;airspace;Luftraum;1;0
+45;air traffic;Luftverkehr;1;2
+46;air traffic service;Luftverkehrsdienste;1;1
+47;air traffic control service - ATC;Luftverkehrskontrolldienst;1;0
+48;all day;ganztägig;1;0
+49;All-up weight;Gesamtgewicht;1;0
+50;allow;erlauben;1;1
+51;alternate aerodrome;Ausweichflugplatz;0;1
+52;altitude;Flughöhe;1;0
+53;amend;ändern;1;1
+54;amendment;Änderung;1;1
+55;ammunition depot;Munitionslager;1;2
+56;announce;bekanntmachen;0;1
+57;anticipate;vorwegnehmen;1;0
+58;applicable;anwendbar;1;0
+59;application;Anwendung, Antrag;1;0
+60;apply;anwenden;1;0
+61;apply for;beantragen;0;1
+62;approach;Anflug;1;0
+63;approach aids;Anflughilfen;1;0
+64;approach centre line;Anfluggrundlinie;1;0
+65;approach to land;Landeanflug;1;0
+66;appropriate;angemessen, zutreffend;1;0
+67;approval;Genehmigung;1;0
+68;appron;Vorfeld;1;0
+69;approximately;annähernd, ungefähr;1;0
+70;armed forces;Streitkräfte;1;0
+71;arrange;einrichten;1;0
+72;arrival route;Anflugstrecke;0;1
+73;as far as;soweit;1;0
+74;as soon as;sobald;1;0
+75;as well as;sowie;1;0
+76;assign;zuweisen;0;2
+77;assignment;Zuweisung;1;0
+78;associated with;in Verbindung mit;0;2
+79;ATC clearance;ATC-Freigabe;1;0
+80;ATC unit;ATC-Stelle;0;1
+81;attached rope;anhängendes Seil;1;0
+82;attention shall be paid to;es ist zu achten auf;0;2
+83;authority;Behörde;1;0
 84;authorization;Genehmigung;1;0
-85;authorize;genehmigen;0;0
-86;autorotation;Autorotation;0;0
-87;available;verfügbar;0;0
-88;avoid;meiden, vermeiden;0;0
-89;aware of;sich bewüßt sein;0;0
+85;authorize;genehmigen;1;0
+86;autorotation;Autorotation;1;0
+87;available;verfügbar;1;0
+88;avoid;meiden, vermeiden;1;0
+89;aware of;sich bewüßt sein;1;1
