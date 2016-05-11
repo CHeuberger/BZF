@@ -99,21 +99,22 @@ public class Test {
         try (BufferedReader reader = Files.newBufferedReader(file)) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] tokens = line.split(SEP, -1);
+                String[] tokens = line.split(SEP);
                 if (tokens.length < 3)
                     throw new IOException("wrong format: " + line);
                 try {
-                    int id = Integer.parseInt(tokens[0]);
+                    int id = parseInt(tokens[0]);
                     String english = tokens[1].trim();
                     String german = tokens[2].trim();
-                    int correct = (tokens.length > 3) ? Integer.parseInt(tokens[3]) : 0;
-                    int wrong = (tokens.length > 4) ? Integer.parseInt(tokens[4]) : 0;
+                    int correct = (tokens.length > 3) ? parseInt(tokens[3]) : 0;
+                    int wrong = (tokens.length > 4) ? parseInt(tokens[4]) : 0;
                     dictionary.add(new Word(id, english, german, correct, wrong));
                 } catch (NumberFormatException ex) {
                     throw new IOException(ex);
                 }
             }
         }
+        System.out.printf("Dictionary: %d words%n", dictionary.size());
         if (dictionary.size() == 0)
             throw new IOException("no words read");
         
@@ -141,14 +142,14 @@ public class Test {
         JButton quit = new JButton("Quit");
         quit.addActionListener(this::doQuit);
         
-        question = new JTextField(30);
+        question = new JTextField(40);
         question.setEditable(false);
         
-        answer = new JTextField(30);
+        answer = new JTextField(40);
         answer.setEnabled(false);
         answer.addActionListener(this::doAnswer);
         
-        correction = new JTextField(30);
+        correction = new JTextField(40);
         correction.setEditable(false);
         
         yesButton = new JButton("Yes");
@@ -173,14 +174,14 @@ public class Test {
         
         frame = new JFrame("BZF");
         frame.setLayout(new GridBagLayout());
-        frame.add(seqButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(12, 2, 22, 2) , 0, 0));
-        frame.add(randomButton, new GridBagConstraints(RELATIVE, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(12, 2, 22, 2) , 0, 0));
-        frame.add(quit, new GridBagConstraints(RELATIVE, 0, 0, 1, 1.0, 0, LINE_END, NONE, new Insets(12, 2, 22, 2) , 0, 0));
-        frame.add(question, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(2, 2, 2, 2) , 0, 0));
-        frame.add(answer, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(2, 2, 22, 2) , 0, 0));
-        frame.add(correction, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(2, 2, 22, 2) , 0, 0));
-        frame.add(buttons, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(2, 2, 12, 2) , 0, 0));
-        frame.add(status, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_END, HORIZONTAL, new Insets(2, 2, 2, 2) , 0, 0));
+        frame.add(seqButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(randomButton, new GridBagConstraints(RELATIVE, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(quit, new GridBagConstraints(RELATIVE, 0, 0, 1, 1.0, 0, LINE_END, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(question, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
+        frame.add(answer, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(correction, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(buttons, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(status, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_END, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setLocationRelativeTo(null);
@@ -358,7 +359,21 @@ public class Test {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(frame, ex);
         }
-        frame.dispose();
+        if (mode != null) {
+            seqButton.setEnabled(true);
+            randomButton.setEnabled(true);
+            question.setText(null);
+            answer.setText(null);
+            answer.setEnabled(false);
+            correction.setText(null);
+            correction.setBackground(null);
+            yesButton.setEnabled(false);
+            noButton.setEnabled(false);
+            status.setText("mode?");
+            mode = null;
+        } else {
+            frame.dispose();
+        }
     }
     
     private boolean isCtrl(ActionEvent ev) {
@@ -367,5 +382,15 @@ public class Test {
     
     private boolean isShift(ActionEvent ev) {
         return (ev.getModifiers() & ActionEvent.SHIFT_MASK) != 0;
+    }
+    
+    private int parseInt(String text) throws IOException {
+        if (text.trim().isEmpty())
+            return 0;
+        try {
+            return Integer.parseInt(text);
+        } catch (NumberFormatException ex) {
+            throw new IOException(ex);
+        }
     }
 }

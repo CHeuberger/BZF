@@ -23,11 +23,11 @@
 23;aerodrome of departure;Startflugplatz, Abflugplatz;0;1
 24;aeronautical chart;Luftfahrtkarte;1;1
 25;aeronautical station;Flugfunkstelle;1;1
-26;aeronautical weather report;Flugwettermeldung;0;3
+26;aeronautical weather report;Flugwettermeldung;1;3
 27;aeroplane;Flugzeug;1;0
 28;aeroplane towing;Flugzeugschlepp;1;0
-29;Aero-tow operations;Flugzeugschleppbetrieb;1;0
-30;Aero-tow start;Flugzeugschleppstart;1;0
+29;aero-tow operations;Flugzeugschleppbetrieb;1;0
+30;aero-tow start;Flugzeugschleppstart;1;0
 31;aggregates of persons;Menschenansammlung;1;1
 32;affected;betroffen;1;1
 33;alter;ändern;1;0
@@ -46,7 +46,7 @@
 46;air traffic service;Luftverkehrsdienste;1;1
 47;air traffic control service - ATC;Luftverkehrskontrolldienst;1;0
 48;all day;ganztägig;1;0
-49;All-up weight;Gesamtgewicht;1;0
+49;all-up weight;Gesamtgewicht;1;0
 50;allow;erlauben;1;1
 51;alternate aerodrome;Ausweichflugplatz;0;1
 52;altitude;Flughöhe;1;0
@@ -73,7 +73,7 @@
 73;as far as;soweit;1;0
 74;as soon as;sobald;1;0
 75;as well as;sowie;1;0
-76;assign;zuweisen;0;2
+76;assign;zuweisen;1;2
 77;assignment;Zuweisung;1;0
 78;associated with;in Verbindung mit;0;2
 79;ATC clearance;ATC-Freigabe;1;0
@@ -87,3 +87,38 @@
 87;available;verfügbar;1;0
 88;avoid;meiden, vermeiden;1;0
 89;aware of;sich bewüßt sein;1;1
+90;backtraking;zurückrollen;0;0
+91;balked landing;durchstarten;0;0
+92;base maps;Grundkarten;0;0
+93;bearing;Peilung;0;0
+94;before;vor;0;0
+95;below;unterhalb;0;0
+96;between;zwischen;0;0
+97;beyond;über ... hinaus;0;0
+98;border;Grenze;0;0
+99;bounded by;begrenzt durch;0;0
+100;braking action;Bremswirkung;0;0
+101;briefing;Beratung, Besprechung;0;0
+102;broadcasts;Sendung;0;0
+103;built-up area;bebautes Gebiet;0;0
+104;cabble digging (ditches);Kabelgrabung;0;0
+105;call sign;Rufzeichen;0;0
+106;calibration;Vermessung;0;0
+107;cancel;aufheben;0;0
+108;care;Vorsicht;0;0
+109;careful;vorsichtig;0;0
+110;cargo;Fracht, Ladung;0;0
+111;cargo dropping;Lastabwurf;0;0
+112;carry out;durchführen;0;0
+113;case;Fall;0;0
+114;case of disaster;Katastrophenfall;0;0
+115;cause;verursachen;0;0
+116;cemetery;Friedhof;0;0
+117;change;ändern, wechseln;0;0
+118;circumfly;umfliegen;0;0
+119;circumstances;Umstände;0;0
+120;citizens;Bürger;0;0
+121;cloister;Kloster;0;0
+122;close;schließen;0;0
+123;closure;Schließung;0;0
+124;commence;beginnen;0;0
