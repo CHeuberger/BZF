@@ -1,18 +1,18 @@
-1;abeam;querab;0;0
-2;accept;annehmen;0;0
-3;according;entsprechend;0;0
-4;accredited;veratnwortlich;0;0
-5;accumulate;ackumulieren;0;0
-6;activate;aktivieren, in Betrieb setzen;0;0
-7;actual;wirklich;0;0
-8;acrobatics;Kunstflug;0;0
-9;add;hinzufügen;0;0
-10;In addition, additional;zusätzlich;0;0
-11;adhere;einhalten;0;0
-12;adherence;Einhaltung;0;0
+1;abeam;querab;1;0
+2;accept;annehmen;1;0
+3;according;entsprechend;1;0
+4;accredited;verantwortlich;1;1
+5;accumulate;ackumulieren;1;0
+6;activate;aktivieren, in Betrieb setzen;1;0
+7;actual;wirklich;0;2
+8;acrobatics;Kunstflug;1;0
+9;add;hinzufügen;1;0
+10;In addition, additional;zusätzlich;1;0
+11;adhere;einhalten;0;1
+12;adherence;Einhaltung;0;1
 13;ADIZ - Air Defence Identification Zone;Flugüberwachungszone;0;0
 14;ADIZ boundary;Grenze ";0;0
-15;adjacent;anliegend, benachbart;0;0
+15;adjacent;anliegend, benachbart;0;1
 16;adjoining;angrenzend;0;0
 17;advance;Fortschritt;0;0
 18;in advance;im voraus;0;0
@@ -31,16 +31,16 @@
 31;aggregates of persons;Menschenansammlung;0;0
 32;affected;betroffen;0;0
 33;alter;ändern;0;0
-34;aid;Hilfe;0;0
+34;aid;Hilfe;1;0
 35;airfield;Landeplatz;0;0
-36;airfield operator;Landeplatzhalter;0;0
+36;airfield operator;Landeplatzhalter;0;1
 37;airborne;gestartet;0;0
 38;airmiss;Fastzusammenstoß;0;0
 39;airmiss report;Meldung über ";0;0
 40;aircraft;Luftfahrzeug;0;0
 41;aircraft type;Luftfahrzeugmuster;0;0
 42;aircraft type designator;Luftfahrzeug-Musterkennzeichnung;0;0
-43;air show;Luftfahrtschau;0;0
+43;air show;Luftfahrtschau;1;0
 44;airspace;Luftraum;0;0
 45;air traffic;Luftverkehr;0;0
 46;air traffic service;Luftverkehrsdienste;0;0
@@ -75,13 +75,13 @@
 75;as well as;sowie;0;0
 76;assign;zuweisen;0;0
 77;assignment;Zuweisung;0;0
-78;associated with;in Verbindung mit;0;0
+78;associated with;in Verbindung mit;0;1
 79;ATC clearance;ATC-Freigabe;0;0
 80;ATC unit;ATC-Stelle;0;0
 81;attached rope;anhängendes Seil;0;0
 82;attention shall be paid to;es ist zu achten auf;0;0
 83;authority;Behörde;0;0
-84;authorization;Genehmigung;0;0
+84;authorization;Genehmigung;1;0
 85;authorize;genehmigen;0;0
 86;autorotation;Autorotation;0;0
 87;available;verfügbar;0;0

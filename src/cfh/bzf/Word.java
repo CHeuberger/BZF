@@ -61,6 +61,27 @@ public class Word {
     public int getWrong() {
         return wrong;
     }
+    
+    public int getTotal() {
+        return correct + wrong;
+    }
+    
+    public int getDiff() {
+        return correct - wrong;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) return true;
+        if (obj == null || obj.getClass() != this.getClass()) return false;
+        Word other = (Word) obj;
+        return other.id == this.id && other.english.equals(this.english) && other.german.equals(this.german);
+    }
+    
+    @Override
+    public int hashCode() {
+        return 11 * id + 19 * english.hashCode() + 37 * german.hashCode();
+    }
 
     private static String requireNonEmpty(String text) {
         if (text.trim().isEmpty())
