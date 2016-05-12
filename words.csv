@@ -1,4 +1,4 @@
-1;abeam;querab;1;0
+1;abeam;querab;2;0
 2;accept;annehmen;1;0
 3;according;entsprechend;1;0
 4;accredited;verantwortlich;1;0
@@ -6,7 +6,7 @@
 6;activate;aktivieren, in Betrieb setzen;1;0
 7;actual;wirklich;1;1
 8;acrobatics;Kunstflug;1;0
-9;add;hinzufügen;0;1
+9;add;hinzufügen;0;2
 10;In addition, additional;zusätzlich;1;0
 11;adhere;einhalten;1;0
 12;adherence;Einhaltung;1;1
@@ -15,12 +15,12 @@
 15;adjacent;anliegend, benachbart;1;1
 16;adjoining;angrenzend;1;2
 17;advance;Fortschritt;0;1
-18;in advance;im voraus;0;1
+18;in advance;im voraus;0;2
 19;admit;zulassen;1;0
 20;admissible;zulässig;1;0
-21;aerial photography;Luftbildaufnahmen;0;1
+21;aerial photography;Luftbildaufnahmen;1;1
 22;aerodrome reference point - ARP;Flugplatzbezugspunkt;1;0
-23;aerodrome of departure;Startflugplatz, Abflugplatz;0;1
+23;aerodrome of departure;Startflugplatz, Abflugplatz;0;2
 24;aeronautical chart;Luftfahrtkarte;1;1
 25;aeronautical station;Flugfunkstelle;1;1
 26;aeronautical weather report;Flugwettermeldung;1;3
@@ -33,7 +33,7 @@
 33;alter;ändern;1;0
 34;aid;Hilfe;1;0
 35;airfield;Landeplatz;1;0
-36;airfield operator;Landeplatzhalter;0;1
+36;airfield operator;Landeplatzhalter;1;1
 37;airborne;gestartet;1;0
 38;airmiss;Fastzusammenstoß;1;0
 39;airmiss report;Meldung über Fastzusammenstoß;1;0
@@ -48,17 +48,17 @@
 48;all day;ganztägig;1;0
 49;all-up weight;Gesamtgewicht;1;0
 50;allow;erlauben;1;1
-51;alternate aerodrome;Ausweichflugplatz;0;1
+51;alternate aerodrome;Ausweichflugplatz;0;2
 52;altitude;Flughöhe;1;0
 53;amend;ändern;1;1
 54;amendment;Änderung;1;1
 55;ammunition depot;Munitionslager;1;2
-56;announce;bekanntmachen;0;1
+56;announce;bekanntmachen;0;2
 57;anticipate;vorwegnehmen;1;0
 58;applicable;anwendbar;1;0
 59;application;Anwendung, Antrag;1;0
 60;apply;anwenden;1;0
-61;apply for;beantragen;0;1
+61;apply for;beantragen;0;2
 62;approach;Anflug;1;0
 63;approach aids;Anflughilfen;1;0
 64;approach centre line;Anfluggrundlinie;1;0
@@ -69,7 +69,7 @@
 69;approximately;annähernd, ungefähr;1;0
 70;armed forces;Streitkräfte;1;0
 71;arrange;einrichten;1;0
-72;arrival route;Anflugstrecke;0;1
+72;arrival route;Anflugstrecke;1;1
 73;as far as;soweit;1;0
 74;as soon as;sobald;1;0
 75;as well as;sowie;1;0
@@ -77,7 +77,7 @@
 77;assignment;Zuweisung;1;0
 78;associated with;in Verbindung mit;0;2
 79;ATC clearance;ATC-Freigabe;1;0
-80;ATC unit;ATC-Stelle;0;1
+80;ATC unit;ATC-Stelle;1;1
 81;attached rope;anhängendes Seil;1;0
 82;attention shall be paid to;es ist zu achten auf;0;2
 83;authority;Behörde;1;0
