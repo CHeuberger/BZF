@@ -102,23 +102,23 @@
 102;broadcasts;Sendung;1;0
 103;built-up area;bebautes Gebiet;1;0
 104;cabble digging (ditches);Kabelgrabung;0;1
-105;call sign;Rufzeichen;0;0
-106;calibration;Vermessung;0;0
-107;cancel;aufheben;0;0
-108;care;Vorsicht;0;0
-109;careful;vorsichtig;0;0
-110;cargo;Fracht, Ladung;0;0
-111;cargo dropping;Lastabwurf;0;0
-112;carry out;durchführen;0;0
-113;case;Fall;0;0
-114;case of disaster;Katastrophenfall;0;0
-115;cause;verursachen;0;0
-116;cemetery;Friedhof;0;0
-117;change;ändern, wechseln;0;0
-118;circumfly;umfliegen;0;0
-119;circumstances;Umstände;0;0
-120;citizens;Bürger;0;0
-121;cloister;Kloster;0;0
-122;close;schließen;0;0
-123;closure;Schließung;0;0
-124;commence;beginnen;0;0
+105;call sign;Rufzeichen;1;0
+106;calibration;Vermessung;0;1
+107;cancel;aufheben;1;0
+108;care;Vorsicht;1;0
+109;careful;vorsichtig;1;0
+110;cargo;Fracht, Ladung;1;0
+111;cargo dropping;Lastabwurf;1;0
+112;carry out;durchführen;0;1
+113;case;Fall;1;0
+114;case of disaster;Katastrophenfall;1;0
+115;cause, to;verursachen;1;0
+116;cemetery;Friedhof;1;0
+117;change, to;ändern, wechseln;1;0
+118;circumfly, to;umfliegen;1;0
+119;circumstances;Umstände;1;0
+120;citizens;Bürger;1;0
+121;cloister;Kloster;1;0
+122;close, to;schließen;1;0
+123;closure;Schließung;1;0
+124;commence, to;beginnen;1;0
