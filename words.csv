@@ -122,118 +122,118 @@
 122;close, to;schließen;1;0
 123;closure;Schließung;1;0
 124;commence, to;beginnen;1;0
-125;community;Wohngebiet;0;0
-126;competent;zuständig;0;0
-127;complain, to;sich beschweren;0;0
+125;community;Wohngebiet;0;1
+126;competent;zuständig;1;0
+127;complain, to;sich beschweren;0;1
 128;completely;vollständig;1;0
-129;compliance;Einhaltung, Befolgung;0;0
+129;compliance;Einhaltung, Befolgung;0;1
 130;comply with, to;einhalten, befolgen;1;0
-131;compilation;Zusammenstellung;0;0
+131;compilation;Zusammenstellung;0;1
 132;comprise, to;einschließen, enthalten;0;1
-133;compulsory reporting point;Pflichtmeldepunkt;0;0
-134;conduct;Durchführung;0;0
-135;concerned;betreffend;0;0
-136;condition;Bedingung, Zustand;0;0
-137;conseccutively;aufeinanderfolgend, fortlaufend;0;0
-138;consent;Zustimmung;0;0
-139;consider, to;betrachen;0;0
-140;considered as granted;als erteilt betrachtet;0;0
-141;considered as issued;als erteilt betrachtet;0;0
-142;connect, to;verbinden, anschließen;0;0
+133;compulsory reporting point;Pflichtmeldepunkt;1;0
+134;conduct;Durchführung;1;0
+135;concerned;betreffend;0;1
+136;condition;Bedingung, Zustand;0;1
+137;conseccutively;aufeinanderfolgend, fortlaufend;0;1
+138;consent;Zustimmung;1;0
+139;consider, to;betrachen;0;1
+140;considered as granted;als erteilt betrachtet;1;0
+141;considered as issued;als erteilt betrachtet;0;1
+142;connect, to;verbinden, anschließen;1;0
 143;connection;Verbindung;1;0
 144;conscientious;gewissenhaft;0;1
-145;considerable;beträchtlich;0;0
-146;constitute, to;darstellen;0;0
-147;construction work;Bauarbeiten;0;0
+145;considerable;beträchtlich;1;0
+146;constitute, to;darstellen;0;1
+147;construction work;Bauarbeiten;1;0
 148;construction area;Baugebiet;1;0
-149;construction equipment;Baugerät;0;0
-150;construction site;Baustelle;0;0
-151;contact, to;Verbindung aufnehmen;0;0
+149;construction equipment;Baugerät;1;0
+150;construction site;Baustelle;1;0
+151;contact, to;Verbindung aufnehmen;1;0
 152;consult, to;konsultieren, um Rat fragen;1;0
 153;contents;Inhalt;1;0
 154;continuance;Fortsetzung, Fortführung;0;1
-155;continuous;fortgesetzt, ständig;0;0
-156;contraction;Zusammenziehung;0;0
-157;coordinate, to;koordinierung, absprechen;0;0
-158;coordination;Absprache;0;0
-159;corresponding;übereinstimmung, entsprechend;0;0
-160;corridor;Korridor;0;0
-161;country road;Lanstraße;0;0
-162;cover;Deckel, Überzug;0;0
-163;cover, to;decken, bedecken, umfassen;0;0
-164;cross, to;durchfliegen, durchqueren, überqueren;0;0
-165;cross-country flight;Überlandflug;0;0
-166;customs;Zoll;0;0
+155;continuous;fortgesetzt, ständig;0;1
+156;contraction;Zusammenziehung;0;1
+157;coordinate, to;koordinieren, absprechen;1;0
+158;coordination;Absprache;0;1
+159;corresponding;übereinstimmung, entsprechend;2;0
+160;corridor;Korridor;1;0
+161;country road;Landstraße;1;0
+162;cover;Deckel, Überzug;1;0
+163;cover, to;decken, bedecken, umfassen;1;0
+164;cross, to;durchfliegen, durchqueren, überqueren;1;0
+165;cross-country flight;Überlandflug;1;0
+166;customs;Zoll;1;0
 167;daily;täglich;1;0
-168;danger;Gefahr;0;0
-169;data;Angaben, Daten;0;0
-170;deficiency;unzulänglichkeit;0;0
-171;definition;Bestimmung, Begriffsbestimmung;0;0
-172;degree;Grad;0;0
-173;demarcation;Abgrenzung;0;0
-174;demonstration flight;Vorführungsflug;0;0
-175;densely populated;dicht besiedelt, dicht bewohnt;0;0
-176;departure information;Abfluginformation;0;0
-177;departure route;Abflugstrecke;0;0
+168;danger;Gefahr;1;0
+169;data;Angaben, Daten;1;0
+170;deficiency;unzulänglichkeit;0;1
+171;definition;Bestimmung, Begriffsbestimmung;0;1
+172;degree;Grad;1;0
+173;demarcation;Abgrenzung;0;1
+174;demonstration flight;Vorführungsflug;1;0
+175;densely populated;dicht besiedelt, dicht bewohnt;0;1
+176;departure information;Abfluginformation;0;1
+177;departure route;Abflugstrecke;1;0
 178;depicted;dargestellt, abgebildet;0;1
 179;details;Einzelheiten;0;1
-180;determine, to;bestimmen, enscheiden;0;0
-181;deviate, to;abweichen;0;0
-182;deviation;Abweichung;0;0
-183;discontinue, to;aufhören mit, abbrechen;0;0
-184;discretion;Belieben, Gutdünken;0;0
-185;disposal;Verfügung;0;0
-186;distance;Entfernung;0;0
+180;determine, to;bestimmen, entscheiden;0;1
+181;deviate, to;abweichen;0;1
+182;deviation;Abweichung;1;0
+183;discontinue, to;aufhören mit, abbrechen;1;0
+184;discretion;Belieben, Gutdünken;0;1
+185;disposal;Verfügung;1;0
+186;distance;Entfernung;0;1
 187;district;Gebiet;1;0
-188;destination;Ziel;0;0
-189;divert, to;ausweichen;0;0
-190;distribution;Verteilung, Vertrieb;0;0
-191;documentation;Dokumentation;0;0
-192;down drafts;Abwinde;0;0
-193;down drop;Durchfallen, Durchsacken;0;0
-194;down time;Landezeit;0;0
-195;downwind (leg);Gegenanflug;0;0
-196;draw special attention to, to;besonderes hinweisen auf;0;0
+188;destination;Ziel;1;0
+189;divert, to;ausweichen;1;0
+190;distribution;Verteilung, Vertrieb;1;0
+191;documentation;Dokumentation;1;0
+192;down drafts;Abwinde;1;0
+193;down drop;Durchfallen, Durchsacken;0;1
+194;down time;Landezeit;1;0
+195;downwind (leg);Gegenanflug;1;0
+196;draw special attention to, to;besonders hinweisen auf;0;1
 197;during;während;1;0
-198;e.g, (for example, for instance);z.B. (zum Beispiel);0;0
-199;early;früh;0;0
-200;earth heaps;Erdhügel, Erdhaufen;0;0
-201;economical;ökonomisch, wirtschaftlich;0;0
-202;efforts;Anstrengungen, Bemühungen;0;0
-203;either ... or;entweder ... oder;0;0
-204;eliminate, to;ausschließen, eliminieren;0;0
-205;emphasize, to;nachdrüklich betonen, hinweisen;0;0
-206;enable, to;befähigen;0;0
-207;endanger, to;gefährden;0;0
-208;enquire, to  inquire, to;sich erkündigen;0;0
-209;en-route;Strecken - …, auf Strecke;0;0
-210;en-route flight;Streckenflug;0;0
-211;ensure, to;sicherstellen;0;0
-212;enter, to;einfliegen;0;0
-213;entry;Einflug, Eintrag;0;0
-214;equidistant;gleich entfernt;0;0
-215;equipped with, to be;ausgerüstet sein mit;0;0
+198;e.g, (for example, for instance);z.B. (zum Beispiel);1;0
+199;early;früh;1;0
+200;earth heaps;Erdhügel, Erdhaufen;1;0
+201;economical;ökonomisch, wirtschaftlich;1;0
+202;efforts;Anstrengungen, Bemühungen;1;0
+203;either ... or;entweder ... oder;1;0
+204;eliminate, to;ausschließen, eliminieren;1;0
+205;emphasize, to;nachdrüklich betonen, hinweisen;0;1
+206;enable, to;befähigen;0;1
+207;endanger, to;gefährden;1;0
+208;enquire, to  inquire, to;sich erkündigen;0;1
+209;en-route;Strecken - …, auf Strecke;1;0
+210;en-route flight;Streckenflug;1;0
+211;ensure, to;sicherstellen;1;0
+212;enter, to;einfliegen;0;1
+213;entry;Einflug, Eintrag;1;0
+214;equidistant;gleich entfernt;1;0
+215;equipped with, to be;ausgerüstet sein mit;1;0
 216;equipment;Ausrüstung;1;0
-217;especially;insbesondere, besonders;0;0
-218;establish, to;festlegen, errichten, herstellen;0;0
-219;establish radio communication;Funkverbindung aufnehmen, herstellen;0;0
+217;especially;insbesondere, besonders;0;1
+218;establish, to;festlegen, errichten, herstellen;0;1
+219;establish radio communication;Funkverbindung aufnehmen, herstellen;1;0
 220;estimated off-block time - EOBT;voraussichtliche Abblockzeit;0;1
-221;estimated time of departure - ETD;voraussichtliche Startzeit;0;0
-222;even;sogar, gerade (Zahl);0;0
-223;event;Ereignis, Vorfall;0;0
-224;exceed, to;überschreiten;0;0
-225;exceptional cases;Ausnahmefälle;0;0
-226;exceptional;Ausnahme;0;0
-227;excerpt;Auszug;0;0
-228;exclusive;ausschließlich;0;0
-229;execute, to;ausführen;0;0
-230;exempted;ausgenommen, befreit;0;0
-231;exercise aircraft;Übungsluftfahrzeug;0;0
-232;exercise area;Übungsgebiet;0;0
-233;existing;vorhanden sein, bestehend;0;0
-234;experience;Erfahrung;0;0
-235;experienced;erfahren;0;0
-236;explicit;ausdrücklich;0;0
-237;extend, to;verlagern, verlaufen;0;0
-238;extent limited in space and time;Außmaß begrenzt nach Raum und Zeit;0;0
-239;extremely;äußerst;0;0
+221;estimated time of departure - ETD;voraussichtliche Startzeit;0;1
+222;even;sogar, gerade (Zahl);1;0
+223;event;Ereignis, Vorfall;1;0
+224;exceed, to;überschreiten;0;1
+225;exceptional cases;Ausnahmefälle;1;0
+226;exceptional;Ausnahme;1;0
+227;excerpt;Auszug;1;0
+228;exclusive;ausschließlich;1;0
+229;execute, to;ausführen;1;0
+230;exempted;ausgenommen, befreit;0;1
+231;exercise aircraft;Übungsluftfahrzeug;1;0
+232;exercise area;Übungsgebiet;1;0
+233;existing;vorhanden sein, bestehend;0;1
+234;experience;Erfahrung;1;0
+235;experienced;erfahren;1;0
+236;explicit;ausdrücklich;0;1
+237;extend, to;verlagern, verlaufen;0;1
+238;extent limited in space and time;Außmaß begrenzt nach Raum und Zeit;0;1
+239;extremely;äußerst;0;1
