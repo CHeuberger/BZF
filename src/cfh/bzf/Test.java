@@ -384,11 +384,11 @@ public class Test {
         } else {
             try {
                 saveWords();
+                frame.dispose();
             } catch (IOException ex) {
                 ex.printStackTrace();
                 JOptionPane.showMessageDialog(frame, ex);
             }
-            frame.dispose();
         }
     }
     
