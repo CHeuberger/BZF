@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.ToIntFunction;
 
 import javax.swing.Box;
 import javax.swing.JButton;
@@ -86,6 +87,7 @@ public class Test {
     private int countWrong = 0;
     private int totalCorrect = 0;
     private int totalWrong = 0;
+	private JButton quitButton;
     
     
     private Test(String filename) throws IOException {
@@ -134,13 +136,21 @@ public class Test {
     
     private void initGUI() {
         seqButton = new JButton("Sequence");
+        seqButton.setToolTipText("<html>original sequence <br>"
+                + "grouped by difference (correct-wrong), <br>"
+                + "SHIFT: by total (correct+wrong), <br>"
+                + "CTRL: by correc answers only</html>");
         seqButton.addActionListener(this::doSequence);
         
         randomButton = new JButton("Random");
+        randomButton.setToolTipText("<html>random sequence <br>"
+                + "grouped by difference (correct-wrong), <br>"
+                + "SHIFT: by total (correct+wrong), <br>"
+                + "CTRL: by correct answers only</html>");
         randomButton.addActionListener(this::doRandom);
         
-        JButton quit = new JButton("Quit");
-        quit.addActionListener(this::doQuit);
+        quitButton = new JButton("Quit");
+        quitButton.addActionListener(this::doQuit);
         
         question = new JTextField(40);
         question.setEditable(false);
@@ -176,7 +186,7 @@ public class Test {
         frame.setLayout(new GridBagLayout());
         frame.add(seqButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
         frame.add(randomButton, new GridBagConstraints(RELATIVE, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
-        frame.add(quit, new GridBagConstraints(RELATIVE, 0, 0, 1, 1.0, 0, LINE_END, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(quitButton, new GridBagConstraints(RELATIVE, 0, 0, 1, 1.0, 0, LINE_END, NONE, new Insets(14, 4, 24, 4) , 0, 0));
         frame.add(question, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
         frame.add(answer, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
         frame.add(correction, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
@@ -199,7 +209,9 @@ public class Test {
             }
         }
 
-        question.setText(words.peek().getEnglish());
+        Word word = words.peek();
+        question.setText(word.getEnglish());
+        question.setToolTipText(String.format("Correct: %d, Wrong: %d", word.getCorrect(), word.getWrong()));
         answer.setText(null);
         answer.setEnabled(true);
         yesButton.setEnabled(false);
@@ -210,35 +222,29 @@ public class Test {
     private void fillWords() {
         switch (mode) {
             case SEQ: {
-                int min = dictionary.stream().mapToInt(Word::getDiff).min().orElse(0);
-                dictionary.stream().filter(w -> w.getDiff() == min).forEachOrdered(words::add);
+                fillWords(Word::getDiff);
                 break;
             }
             case RAND: {
-                int min = dictionary.stream().mapToInt(Word::getDiff).min().orElse(0);
-                dictionary.stream().filter(w -> w.getDiff() == min).forEach(words::add);
+                fillWords(Word::getDiff);
                 Collections.shuffle(words);
                 break;
             }
             case SEQ_C: {
-                int min = dictionary.stream().mapToInt(Word::getCorrect).min().orElse(0);
-                dictionary.stream().filter(w -> w.getCorrect() == min).forEachOrdered(words::add);
+                fillWords(Word::getCorrect);
                 break;
             }
             case RAND_C: {
-                int min = dictionary.stream().mapToInt(Word::getCorrect).min().orElse(0);
-                dictionary.stream().filter(w -> w.getCorrect() == min).forEach(words::add);
+                fillWords(Word::getCorrect);
                 Collections.shuffle(words);
                 break;
             }
             case SEQ_T: {
-                int min = dictionary.stream().mapToInt(Word::getTotal).min().orElse(0);
-                dictionary.stream().filter(w -> w.getTotal() == min).forEachOrdered(words::add);
+                fillWords(Word::getTotal);
                 break;
             }
             case RAND_T: {
-                int min = dictionary.stream().mapToInt(Word::getTotal).min().orElse(0);
-                dictionary.stream().filter(w -> w.getTotal() == min).forEach(words::add);
+                fillWords(Word::getTotal);
                 Collections.shuffle(words);
                 break;
             }
@@ -248,6 +254,11 @@ public class Test {
             }
         }
         updateStatus();
+    }
+
+    private void fillWords(ToIntFunction<? super Word> func) {
+        int min = dictionary.stream().mapToInt(func).min().orElse(0);
+        dictionary.stream().filter(w -> func.applyAsInt(w) == min).forEachOrdered(words::add);
     }
     
     private void jumpNext() {
@@ -264,6 +275,7 @@ public class Test {
         mode = m;
         seqButton.setEnabled(false);
         randomButton.setEnabled(false);
+        quitButton.setText("Close");
         next();
         updateStatus();
     }
@@ -349,7 +361,8 @@ public class Test {
     }
     
     private void updateStatus() {
-        status.setText(String.format("Session: +%d -%d, Total: +%d -%d, Open: %s", countCorrect, countWrong, totalCorrect, totalWrong, words.size()));
+        status.setText(String.format("Session: +%d -%d, Total: +%d -%d, Open: %d from %d", 
+        		countCorrect, countWrong, totalCorrect, totalWrong, words.size(), dictionary.size()));
     }
 
     private void doQuit(ActionEvent ev) {
@@ -357,7 +370,9 @@ public class Test {
             words.clear();
             seqButton.setEnabled(true);
             randomButton.setEnabled(true);
+            quitButton.setText("QUIT");
             question.setText(null);
+            question.setToolTipText(null);
             answer.setText(null);
             answer.setEnabled(false);
             correction.setText(null);

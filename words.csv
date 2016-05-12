@@ -87,21 +87,21 @@
 87;available;verfügbar;1;0
 88;avoid;meiden, vermeiden;1;0
 89;aware of;sich bewüßt sein;1;1
-90;backtraking;zurückrollen;0;0
-91;balked landing;durchstarten;0;0
-92;base maps;Grundkarten;0;0
-93;bearing;Peilung;0;0
-94;before;vor;0;0
-95;below;unterhalb;0;0
-96;between;zwischen;0;0
-97;beyond;über ... hinaus;0;0
-98;border;Grenze;0;0
-99;bounded by;begrenzt durch;0;0
-100;braking action;Bremswirkung;0;0
-101;briefing;Beratung, Besprechung;0;0
-102;broadcasts;Sendung;0;0
-103;built-up area;bebautes Gebiet;0;0
-104;cabble digging (ditches);Kabelgrabung;0;0
+90;backtraking;zurückrollen;1;0
+91;balked landing;durchstarten;1;0
+92;base maps;Grundkarten;1;0
+93;bearing;Peilung;1;0
+94;before;vor;0;1
+95;below;unterhalb;0;1
+96;between;zwischen;1;0
+97;beyond;über ... hinaus;0;1
+98;border;Grenze;1;0
+99;bounded by;begrenzt durch;1;0
+100;braking action;Bremswirkung;1;0
+101;briefing;Beratung, Besprechung;1;0
+102;broadcasts;Sendung;1;0
+103;built-up area;bebautes Gebiet;1;0
+104;cabble digging (ditches);Kabelgrabung;0;1
 105;call sign;Rufzeichen;0;0
 106;calibration;Vermessung;0;0
 107;cancel;aufheben;0;0
