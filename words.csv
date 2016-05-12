@@ -1,14 +1,14 @@
 1;abeam;querab;2;0
-2;accept;annehmen;1;0
-3;according;entsprechend;1;0
+2;accept, to;annehmen;1;0
+3;according to;entsprechend;1;0
 4;accredited;verantwortlich;1;0
-5;accumulate;ackumulieren;1;0
+5;accumulate, to;ackumulieren;1;0
 6;activate;aktivieren, in Betrieb setzen;1;0
 7;actual;wirklich;1;1
 8;acrobatics;Kunstflug;1;0
-9;add;hinzufügen;0;2
+9;add, to;hinzufügen;0;2
 10;In addition, additional;zusätzlich;1;0
-11;adhere;einhalten;1;0
+11;adhere to, to;einhalten;1;0
 12;adherence;Einhaltung;1;1
 13;ADIZ - Air Defence Identification Zone;Flugüberwachungszone;1;0
 14;ADIZ boundary;Grenze Flugüberwachungszone;1;0
@@ -16,7 +16,7 @@
 16;adjoining;angrenzend;1;2
 17;advance;Fortschritt;0;1
 18;in advance;im voraus;0;2
-19;admit;zulassen;1;0
+19;admit, to;zulassen;1;0
 20;admissible;zulässig;1;0
 21;aerial photography;Luftbildaufnahmen;1;1
 22;aerodrome reference point - ARP;Flugplatzbezugspunkt;1;0
@@ -30,7 +30,7 @@
 30;aero-tow start;Flugzeugschleppstart;1;0
 31;aggregates of persons;Menschenansammlung;1;1
 32;affected;betroffen;1;1
-33;alter;ändern;1;0
+33;alter, to;ändern;1;0
 34;aid;Hilfe;1;0
 35;airfield;Landeplatz;1;0
 36;airfield operator;Landeplatzhalter;1;1
@@ -47,18 +47,18 @@
 47;air traffic control service - ATC;Luftverkehrskontrolldienst;1;0
 48;all day;ganztägig;1;0
 49;all-up weight;Gesamtgewicht;1;0
-50;allow;erlauben;1;1
+50;allow, to;erlauben;1;1
 51;alternate aerodrome;Ausweichflugplatz;0;2
 52;altitude;Flughöhe;1;0
-53;amend;ändern;1;1
+53;amend, to;ändern;1;1
 54;amendment;Änderung;1;1
 55;ammunition depot;Munitionslager;1;2
-56;announce;bekanntmachen;0;2
-57;anticipate;vorwegnehmen;1;0
+56;announce, to;bekanntmachen;0;2
+57;anticipate, to;vorwegnehmen;1;0
 58;applicable;anwendbar;1;0
 59;application;Anwendung, Antrag;1;0
-60;apply;anwenden;1;0
-61;apply for;beantragen;0;2
+60;apply, to;anwenden;1;0
+61;apply for, to;beantragen;0;2
 62;approach;Anflug;1;0
 63;approach aids;Anflughilfen;1;0
 64;approach centre line;Anfluggrundlinie;1;0
@@ -68,12 +68,12 @@
 68;appron;Vorfeld;1;0
 69;approximately;annähernd, ungefähr;1;0
 70;armed forces;Streitkräfte;1;0
-71;arrange;einrichten;1;0
+71;arrange, to;einrichten;1;0
 72;arrival route;Anflugstrecke;1;1
 73;as far as;soweit;1;0
 74;as soon as;sobald;1;0
 75;as well as;sowie;1;0
-76;assign;zuweisen;1;2
+76;assign, to;zuweisen;1;2
 77;assignment;Zuweisung;1;0
 78;associated with;in Verbindung mit;0;2
 79;ATC clearance;ATC-Freigabe;1;0
@@ -82,11 +82,11 @@
 82;attention shall be paid to;es ist zu achten auf;0;2
 83;authority;Behörde;1;0
 84;authorization;Genehmigung;1;0
-85;authorize;genehmigen;1;0
+85;authorize, to;genehmigen;1;0
 86;autorotation;Autorotation;1;0
 87;available;verfügbar;1;0
-88;avoid;meiden, vermeiden;1;0
-89;aware of;sich bewüßt sein;1;1
+88;avoid, to;meiden, vermeiden;1;0
+89;aware of, to be;sich bewüßt sein;1;1
 90;backtraking;zurückrollen;1;0
 91;balked landing;durchstarten;1;0
 92;base maps;Grundkarten;1;0
@@ -104,12 +104,12 @@
 104;cabble digging (ditches);Kabelgrabung;0;1
 105;call sign;Rufzeichen;1;0
 106;calibration;Vermessung;0;1
-107;cancel;aufheben;1;0
+107;cancel, to;aufheben;1;0
 108;care;Vorsicht;1;0
 109;careful;vorsichtig;1;0
 110;cargo;Fracht, Ladung;1;0
 111;cargo dropping;Lastabwurf;1;0
-112;carry out;durchführen;0;1
+112;carry out, to;durchführen;0;1
 113;case;Fall;1;0
 114;case of disaster;Katastrophenfall;1;0
 115;cause, to;verursachen;1;0
@@ -122,3 +122,118 @@
 122;close, to;schließen;1;0
 123;closure;Schließung;1;0
 124;commence, to;beginnen;1;0
+125;community;Wohngebiet;0;0
+126;competent;zuständig;0;0
+127;complain, to;sich beschweren;0;0
+128;completely;vollständig;1;0
+129;compliance;Einhaltung, Befolgung;0;0
+130;comply with, to;einhalten, befolgen;1;0
+131;compilation;Zusammenstellung;0;0
+132;comprise, to;einschließen, enthalten;0;1
+133;compulsory reporting point;Pflichtmeldepunkt;0;0
+134;conduct;Durchführung;0;0
+135;concerned;betreffend;0;0
+136;condition;Bedingung, Zustand;0;0
+137;conseccutively;aufeinanderfolgend, fortlaufend;0;0
+138;consent;Zustimmung;0;0
+139;consider, to;betrachen;0;0
+140;considered as granted;als erteilt betrachtet;0;0
+141;considered as issued;als erteilt betrachtet;0;0
+142;connect, to;verbinden, anschließen;0;0
+143;connection;Verbindung;1;0
+144;conscientious;gewissenhaft;0;1
+145;considerable;beträchtlich;0;0
+146;constitute, to;darstellen;0;0
+147;construction work;Bauarbeiten;0;0
+148;construction area;Baugebiet;1;0
+149;construction equipment;Baugerät;0;0
+150;construction site;Baustelle;0;0
+151;contact, to;Verbindung aufnehmen;0;0
+152;consult, to;konsultieren, um Rat fragen;1;0
+153;contents;Inhalt;1;0
+154;continuance;Fortsetzung, Fortführung;0;1
+155;continuous;fortgesetzt, ständig;0;0
+156;contraction;Zusammenziehung;0;0
+157;coordinate, to;koordinierung, absprechen;0;0
+158;coordination;Absprache;0;0
+159;corresponding;übereinstimmung, entsprechend;0;0
+160;corridor;Korridor;0;0
+161;country road;Lanstraße;0;0
+162;cover;Deckel, Überzug;0;0
+163;cover, to;decken, bedecken, umfassen;0;0
+164;cross, to;durchfliegen, durchqueren, überqueren;0;0
+165;cross-country flight;Überlandflug;0;0
+166;customs;Zoll;0;0
+167;daily;täglich;1;0
+168;danger;Gefahr;0;0
+169;data;Angaben, Daten;0;0
+170;deficiency;unzulänglichkeit;0;0
+171;definition;Bestimmung, Begriffsbestimmung;0;0
+172;degree;Grad;0;0
+173;demarcation;Abgrenzung;0;0
+174;demonstration flight;Vorführungsflug;0;0
+175;densely populated;dicht besiedelt, dicht bewohnt;0;0
+176;departure information;Abfluginformation;0;0
+177;departure route;Abflugstrecke;0;0
+178;depicted;dargestellt, abgebildet;0;1
+179;details;Einzelheiten;0;1
+180;determine, to;bestimmen, enscheiden;0;0
+181;deviate, to;abweichen;0;0
+182;deviation;Abweichung;0;0
+183;discontinue, to;aufhören mit, abbrechen;0;0
+184;discretion;Belieben, Gutdünken;0;0
+185;disposal;Verfügung;0;0
+186;distance;Entfernung;0;0
+187;district;Gebiet;1;0
+188;destination;Ziel;0;0
+189;divert, to;ausweichen;0;0
+190;distribution;Verteilung, Vertrieb;0;0
+191;documentation;Dokumentation;0;0
+192;down drafts;Abwinde;0;0
+193;down drop;Durchfallen, Durchsacken;0;0
+194;down time;Landezeit;0;0
+195;downwind (leg);Gegenanflug;0;0
+196;draw special attention to, to;besonderes hinweisen auf;0;0
+197;during;während;1;0
+198;e.g, (for example, for instance);z.B. (zum Beispiel);0;0
+199;early;früh;0;0
+200;earth heaps;Erdhügel, Erdhaufen;0;0
+201;economical;ökonomisch, wirtschaftlich;0;0
+202;efforts;Anstrengungen, Bemühungen;0;0
+203;either ... or;entweder ... oder;0;0
+204;eliminate, to;ausschließen, eliminieren;0;0
+205;emphasize, to;nachdrüklich betonen, hinweisen;0;0
+206;enable, to;befähigen;0;0
+207;endanger, to;gefährden;0;0
+208;enquire, to  inquire, to;sich erkündigen;0;0
+209;en-route;Strecken - …, auf Strecke;0;0
+210;en-route flight;Streckenflug;0;0
+211;ensure, to;sicherstellen;0;0
+212;enter, to;einfliegen;0;0
+213;entry;Einflug, Eintrag;0;0
+214;equidistant;gleich entfernt;0;0
+215;equipped with, to be;ausgerüstet sein mit;0;0
+216;equipment;Ausrüstung;1;0
+217;especially;insbesondere, besonders;0;0
+218;establish, to;festlegen, errichten, herstellen;0;0
+219;establish radio communication;Funkverbindung aufnehmen, herstellen;0;0
+220;estimated off-block time - EOBT;voraussichtliche Abblockzeit;0;1
+221;estimated time of departure - ETD;voraussichtliche Startzeit;0;0
+222;even;sogar, gerade (Zahl);0;0
+223;event;Ereignis, Vorfall;0;0
+224;exceed, to;überschreiten;0;0
+225;exceptional cases;Ausnahmefälle;0;0
+226;exceptional;Ausnahme;0;0
+227;excerpt;Auszug;0;0
+228;exclusive;ausschließlich;0;0
+229;execute, to;ausführen;0;0
+230;exempted;ausgenommen, befreit;0;0
+231;exercise aircraft;Übungsluftfahrzeug;0;0
+232;exercise area;Übungsgebiet;0;0
+233;existing;vorhanden sein, bestehend;0;0
+234;experience;Erfahrung;0;0
+235;experienced;erfahren;0;0
+236;explicit;ausdrücklich;0;0
+237;extend, to;verlagern, verlaufen;0;0
+238;extent limited in space and time;Außmaß begrenzt nach Raum und Zeit;0;0
+239;extremely;äußerst;0;0
