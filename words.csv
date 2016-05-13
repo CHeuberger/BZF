@@ -6,7 +6,7 @@
 6;activate;aktivieren, in Betrieb setzen;1;0
 7;actual;wirklich;1;1
 8;acrobatics;Kunstflug;1;0
-9;add, to;hinzufügen;0;2
+9;add, to;hinzufügen;1;2
 10;In addition, additional;zusätzlich;1;0
 11;adhere to, to;einhalten;1;0
 12;adherence;Einhaltung;1;1
@@ -53,12 +53,12 @@
 53;amend, to;ändern;1;1
 54;amendment;Änderung;1;1
 55;ammunition depot;Munitionslager;1;2
-56;announce, to;bekanntmachen;0;2
+56;announce, to;bekanntmachen;1;2
 57;anticipate, to;vorwegnehmen;1;0
 58;applicable;anwendbar;1;0
 59;application;Anwendung, Antrag;1;0
 60;apply, to;anwenden;1;0
-61;apply for, to;beantragen;0;2
+61;apply for, to;beantragen;1;2
 62;approach;Anflug;1;0
 63;approach aids;Anflughilfen;1;0
 64;approach centre line;Anfluggrundlinie;1;0
