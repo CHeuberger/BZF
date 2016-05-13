@@ -36,6 +36,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
@@ -70,6 +71,7 @@ public class Test {
     private final LinkedList<Word> words = new LinkedList<>();
 
     private JFrame frame;
+    private JRadioButton learnButton;
     private JButton seqButton;
     private JButton randomButton;
     private JTextField question;
@@ -135,6 +137,9 @@ public class Test {
     }
     
     private void initGUI() {
+        learnButton = new JRadioButton("Learn");
+        learnButton.addActionListener(this::doLearn);
+        
         seqButton = new JButton("Sequence");
         seqButton.setToolTipText("<html>original sequence <br>"
                 + "grouped by difference (correct-wrong), <br>"
@@ -184,14 +189,15 @@ public class Test {
         
         frame = new JFrame("BZF");
         frame.setLayout(new GridBagLayout());
-        frame.add(seqButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(learnButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
+        frame.add(seqButton, new GridBagConstraints(RELATIVE, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
         frame.add(randomButton, new GridBagConstraints(RELATIVE, 0, 1, 1, 0, 0, CENTER, NONE, new Insets(14, 4, 24, 4) , 0, 0));
         frame.add(quitButton, new GridBagConstraints(RELATIVE, 0, 0, 1, 1.0, 0, LINE_END, NONE, new Insets(14, 4, 24, 4) , 0, 0));
-        frame.add(question, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
-        frame.add(answer, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
-        frame.add(correction, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
-        frame.add(buttons, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
-        frame.add(status, new GridBagConstraints(0, RELATIVE, 3, 1, 0, 0, LINE_END, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
+        frame.add(question, new GridBagConstraints(0, RELATIVE, 4, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
+        frame.add(answer, new GridBagConstraints(0, RELATIVE, 4, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(correction, new GridBagConstraints(0, RELATIVE, 4, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(buttons, new GridBagConstraints(0, RELATIVE, 4, 1, 0, 0, LINE_START, HORIZONTAL, new Insets(4, 4, 24, 4) , 0, 0));
+        frame.add(status, new GridBagConstraints(0, RELATIVE, 4, 1, 0, 0, LINE_END, HORIZONTAL, new Insets(4, 4, 4, 4) , 0, 0));
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setLocationRelativeTo(null);
@@ -212,8 +218,9 @@ public class Test {
         Word word = words.peek();
         question.setText(word.getEnglish());
         question.setToolTipText(String.format("Correct: %d, Wrong: %d", word.getCorrect(), word.getWrong()));
-        answer.setText(null);
+        answer.setText(learnButton.isSelected() ? word.getGerman() : null);
         answer.setEnabled(true);
+        answer.setEditable(!learnButton.isSelected());
         yesButton.setEnabled(false);
         noButton.setEnabled(false);
         answer.requestFocusInWindow();
@@ -258,7 +265,15 @@ public class Test {
 
     private void fillWords(ToIntFunction<? super Word> func) {
         int min = dictionary.stream().mapToInt(func).min().orElse(0);
-        dictionary.stream().filter(w -> func.applyAsInt(w) == min).forEachOrdered(words::add);
+        if (learnButton.isSelected()) {
+            int max = dictionary.stream().mapToInt(func).max().orElse(0);
+            for (int i = min; i <= max; i += 1) {
+                final int value = i;
+                dictionary.stream().filter(w -> func.applyAsInt(w) == value).forEachOrdered(words::add);
+            }
+        } else {
+            dictionary.stream().filter(w -> func.applyAsInt(w) == min).forEachOrdered(words::add);
+        }
     }
     
     private void jumpNext() {
@@ -273,11 +288,16 @@ public class Test {
     
     private void setMode(Mode m) {
         mode = m;
+        learnButton.setEnabled(false);
         seqButton.setEnabled(false);
         randomButton.setEnabled(false);
         quitButton.setText("Close");
         next();
         updateStatus();
+    }
+    
+    private void doLearn(ActionEvent ev) {
+        learnButton.setBackground(learnButton.isSelected() ? Color.GREEN : null);
     }
     
     private void doSequence(ActionEvent ev) {
@@ -301,6 +321,10 @@ public class Test {
     }
     
     private void doAnswer(ActionEvent ev) {
+        if (learnButton.isSelected()) {
+            next();
+            return;
+        }
         String text = answer.getText().toLowerCase().trim();
         if (text.isEmpty()) {
             yesButton.setEnabled(false);
@@ -368,6 +392,7 @@ public class Test {
     private void doQuit(ActionEvent ev) {
         if (mode != null) {
             words.clear();
+            learnButton.setEnabled(true);
             seqButton.setEnabled(true);
             randomButton.setEnabled(true);
             quitButton.setText("QUIT");

@@ -15,15 +15,15 @@
 15;adjacent;anliegend, benachbart;1;1
 16;adjoining;angrenzend;1;2
 17;advance;Fortschritt;0;1
-18;in advance;im voraus;0;2
+18;in advance;im voraus;1;2
 19;admit, to;zulassen;1;0
 20;admissible;zulässig;1;0
 21;aerial photography;Luftbildaufnahmen;1;1
 22;aerodrome reference point - ARP;Flugplatzbezugspunkt;1;0
-23;aerodrome of departure;Startflugplatz, Abflugplatz;0;2
+23;aerodrome of departure;Startflugplatz, Abflugplatz;1;2
 24;aeronautical chart;Luftfahrtkarte;1;1
 25;aeronautical station;Flugfunkstelle;1;1
-26;aeronautical weather report;Flugwettermeldung;1;3
+26;aeronautical weather report;Flugwettermeldung;2;3
 27;aeroplane;Flugzeug;1;0
 28;aeroplane towing;Flugzeugschlepp;1;0
 29;aero-tow operations;Flugzeugschleppbetrieb;1;0
@@ -48,7 +48,7 @@
 48;all day;ganztägig;1;0
 49;all-up weight;Gesamtgewicht;1;0
 50;allow, to;erlauben;1;1
-51;alternate aerodrome;Ausweichflugplatz;0;2
+51;alternate aerodrome;Ausweichflugplatz;1;2
 52;altitude;Flughöhe;1;0
 53;amend, to;ändern;1;1
 54;amendment;Änderung;1;1
