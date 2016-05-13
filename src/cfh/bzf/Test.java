@@ -14,6 +14,7 @@ package cfh.bzf;
 import static java.awt.GridBagConstraints.*;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -157,15 +158,20 @@ public class Test {
         quitButton = new JButton("Quit");
         quitButton.addActionListener(this::doQuit);
         
+        Font font = new Font("Dialog", Font.BOLD, 14);
         question = new JTextField(40);
         question.setEditable(false);
+        question.setFont(font);
         
         answer = new JTextField(40);
         answer.setEnabled(false);
+        answer.setFont(font);
         answer.addActionListener(this::doAnswer);
         
         correction = new JTextField(40);
         correction.setEditable(false);
+        correction.setFont(font);
+        correction.setFont(font);
         
         yesButton = new JButton("Yes");
         yesButton.setEnabled(false);
@@ -223,6 +229,7 @@ public class Test {
         answer.setEditable(!learnButton.isSelected());
         yesButton.setEnabled(false);
         noButton.setEnabled(false);
+        updateStatus();
         answer.requestFocusInWindow();
     }
 
